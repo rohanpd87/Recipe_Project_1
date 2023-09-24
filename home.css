@@ -1,0 +1,103 @@
+*{
+    margin: 0; padding: 0;
+}
+body{
+    background-color:skyblue;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+nav{
+    /* background-color: aquamarine; */
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    line-height: 2.5em;
+    padding: 1em;
+    position: fixed;
+    display: flex;
+    width: 100%;
+}
+img#code{
+    display: flex;
+    height: 1.6em;
+    align-items: center;
+    box-shadow: 6px 6px .25em lightskyblue;
+    margin-right: 1em;
+}
+.head{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    font-size: x-large;
+    width: 63%;
+    color: greenyellow;
+    align-items: center;
+}
+.head_end{
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.head_end li{
+    width: 8em;
+    text-align: center;
+    transition: all .5s;
+    border: maroon solid 1.5px;
+}
+ul.head_end li a{
+    color:darkblue;
+    text-decoration: none;
+    transition: all .5s;
+    font-family: cursive;
+}
+.head_end li:hover{
+    position: relative;
+    background-color: #FFCC70;
+}
+.head_end li ul.dropdown-menu li:hover{
+    position: relative;
+    background-color:darkkhaki;
+}
+ul.head_end li.dropdown ul.dropdown-menu{
+    display: none;
+    position:fixed;
+    z-index: 999;
+    right: 12;
+    width: 10em;
+    border: double red .2em;
+    background: white;
+}
+ul.head_end li:hover ul.dropdown-menu {
+    display: block;
+    background: #85FFBD; /* Display the dropdown */
+}
+ul.head_end li ul.dropdown-menu li {
+    display: block; /* Display the dropdown */
+    text-align: center;
+    transition: all .5s;
+    width: 99%;
+    border: solid red .1em;
+}
+.maincont{
+    display: flex;
+    justify-content: center;
+}
+.maincont1{
+    display: flex;
+    align-content: space-evenly;
+    flex-direction: column;
+    background-color: azure;
+    padding-bottom: 100vh;
+    width: 75vw;
+    margin-top: 4.5em;
+    /* gap: 100px; */
+    box-shadow: 12px -3px 15px -4px rgba(0, 55, 162, 0.97), -12px -3px 8px -4px rgba(0, 55, 162, 0.97);
+}
+#footer{
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    padding: 1em;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}
